@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { ThemeProvider, createTheme, makeStyles } from '@mui/material/styles';
 import { AppBar, Box, Button, Toolbar, Grid, Paper, Typography, Stack, Link, IconButton, Card, CardContent} from '@mui/material';
-import { Instagram, LinkedIn, Email, GitHub, FileDownload, Description} from '@mui/icons-material';
+import { Instagram, LinkedIn, Email, GitHub, Description} from '@mui/icons-material';
 import { maxWidth } from '@mui/system';
 
 function App() {
@@ -44,11 +44,8 @@ const appTheme = createTheme({
     ].join(','),
   }});
 
-  const downloadResume = () => {
-    const link = document.createElement("a");
-    link.download = 'resume-krish-nathan.pdf';
-    link.href = "./resume-krish-nathan.pdf";
-    link.click();
+  const openResume = () => {
+    window.open("./resume-krish-nathan.pdf");
   };
 
 function ButtonAppBar() {
@@ -116,7 +113,7 @@ function IntroPar() {
       <IconButton className='icon' href="mailto:knathan.recruiting@gmail.com"><Email /></IconButton>
       <IconButton className='icon' href="https://github.com/nathankrish"><GitHub /></IconButton>
     </Stack>
-    <Button onClick = {downloadResume} variant = 'outlined'><FileDownload/><Typography sx ={{marginLeft: 1}}>Download Resume</Typography></Button>          
+    <Button onClick = {openResume} variant = 'outlined'><Description/><Typography sx ={{marginLeft: 1}}>Resume</Typography></Button>          
   </Paper>
   );
 }
