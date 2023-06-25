@@ -109,7 +109,6 @@ function IntroPar() {
   
     <Stack spacing={3} sx = {{marginTop: 2, marginBottom: 2}} direction = {"row"}>
       <IconButton className='icon' href="https://www.linkedin.com/in/krish-nathan-96657a186/"><LinkedIn /></IconButton>
-      <IconButton className='icon' href="https://www.instagram.com/nathan.krish/"><Instagram /></IconButton>
       <IconButton className='icon' href="mailto:knathan.recruiting@gmail.com"><Email /></IconButton>
       <IconButton className='icon' href="https://github.com/nathankrish"><GitHub /></IconButton>
     </Stack>
