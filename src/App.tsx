@@ -45,7 +45,7 @@ const appTheme = createTheme({
   }});
 
   const openResume = () => {
-    window.open("./resume-krish-nathan.pdf");
+    window.open("./krishnathan-internship.pdf");
   };
 
 function ButtonAppBar() {
@@ -104,8 +104,8 @@ function IntroPar() {
   return(
   <Paper elevation={0} sx = {{padding: 5}} >
   <Typography variant = "h3" color = "primary.contrastText" sx={{marginBottom: 1}}><strong>Krish Nathan</strong></Typography>
-  <Typography variant = "body1" fontSize={"20px"}>I'm a fourth-year computer science student at Georgia Tech.</Typography>
-  <Typography variant = "body1" fontSize={"20px"}>I'm open to full-time software engineering roles or pursuing a masters degree.</Typography>
+  <Typography variant = "body1" fontSize={"20px"}>I'm a first year masters student at Georgia Tech, specializing in Computing Systems</Typography>
+  <Typography variant = "body1" fontSize={"20px"}>I'm open to internships and full-time software engineering roles</Typography>
   
     <Stack spacing={3} sx = {{marginTop: 2, marginBottom: 2}} direction = {"row"}>
       <IconButton className='icon' href="https://www.linkedin.com/in/krish-nathan-96657a186/"><LinkedIn /></IconButton>
